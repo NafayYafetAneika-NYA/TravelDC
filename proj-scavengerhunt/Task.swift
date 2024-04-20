@@ -11,15 +11,17 @@ import CoreLocation
 class Task {
     let title: String
     let description: String
+    var bgimage: URL?
     var image: UIImage?
     var imageLocation: CLLocation?
     var isComplete: Bool {
         image != nil
     }
 
-    init(title: String, description: String) {
+    init(title: String, description: String, bgimage: URL? = nil) {
         self.title = title
         self.description = description
+        self.bgimage = bgimage
     }
 
     func set(_ image: UIImage, with location: CLLocation) {
@@ -31,12 +33,11 @@ class Task {
 extension Task {
     static var mockedTasks: [Task] {
         return [
-            Task(title: "Pickup flowers from the Farmers Market 💐",
-                 description: "Try to get an arrangement with a fall vibe. The Urban Vergo floral truck has some great bouquets."),
-            Task(title: "Take Kingsley for a walk 🦮",
-                 description: "Bring treats to encourage him to walk, otherwise be prepared to carry him when he flops."),
-            Task(title: "Grab a fresh candle 🕯",
-                 description: "If you're by the Ferry Building, check out SOMA Small Batch Goods, they have the best candles EVER!!! Their California Morning candle is divine!")
+            Task(title: "Washington Monument",
+                 description: "Take a selfie near the Washington Monument", bgimage: URL(string:"https://i.postimg.cc/59rHXb1d/Rectangle-1-1.png")),
+            Task(title: "Museum of Natural History",
+                 description: "Visit the Smithsonian National Museum of Natural History and take selfies with the giant elephants!", bgimage: URL(string:"https://i.ibb.co/7NCFvJq/Rectangle-8.png")),
+            
         ]
     }
 }

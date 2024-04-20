@@ -17,6 +17,7 @@
 		983ACF4A2B6843AC004F08B3 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983ACF492B6843AC004F08B3 /* TaskDetailViewController.swift */; };
 		983ACF4C2B684C4A004F08B3 /* TaskAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983ACF4B2B684C4A004F08B3 /* TaskAnnotationView.swift */; };
 		983ACF4E2B684C87004F08B3 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983ACF4D2B684C87004F08B3 /* TaskCell.swift */; };
+		986F70CE2BD43638003D158C /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 986F70CD2BD43638003D158C /* Nuke */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				986F70CE2BD43638003D158C /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +97,9 @@
 			dependencies = (
 			);
 			name = "proj-scavengerhunt";
+			packageProductDependencies = (
+				986F70CD2BD43638003D158C /* Nuke */,
+			);
 			productName = "proj-scavengerhunt";
 			productReference = 983ACF302B683FCB004F08B3 /* proj-scavengerhunt.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 983ACF272B683FCB004F08B3;
+			packageReferences = (
+				986F70CC2BD43638003D158C /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 983ACF312B683FCB004F08B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -379,6 +387,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		986F70CC2BD43638003D158C /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = exactVersion;
+				version = 9.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		986F70CD2BD43638003D158C /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 986F70CC2BD43638003D158C /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 983ACF282B683FCB004F08B3 /* Project object */;
 }
