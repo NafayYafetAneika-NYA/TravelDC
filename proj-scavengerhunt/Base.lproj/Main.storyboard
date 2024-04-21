@@ -31,14 +31,14 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 1" translatesAutoresizingMaskIntoConstraints="NO" id="eat-E7-ZaS">
                                                     <rect key="frame" x="20" y="11" width="353" height="204"/>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Xim-1d-Bw6">
-                                                    <rect key="frame" x="46" y="66" width="301" height="94"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Xim-1d-Bw6">
+                                                    <rect key="frame" x="46" y="31" width="301" height="164"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dzc-kj-O5S">
-                                                            <rect key="frame" x="0.0" y="0.0" width="293.33333333333331" height="35.333333333333336"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="300.33333333333331" height="82"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Washington Monument " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdZ-Ts-QKc">
-                                                                    <rect key="frame" x="0.0" y="2.6666666666666714" width="217.33333333333334" height="30"/>
+                                                                    <rect key="frame" x="0.0" y="26" width="217.33333333333334" height="30"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="217.33000000000001" id="kek-mo-3PS"/>
                                                                         <constraint firstAttribute="height" constant="30" id="riX-6E-KR3"/>
@@ -47,22 +47,17 @@
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmA-be-2Qg">
-                                                                    <rect key="frame" x="233.33333333333331" y="2.6666666666666714" width="60" height="30"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="easy" translatesAutoresizingMaskIntoConstraints="NO" id="6JU-24-nT5">
+                                                                    <rect key="frame" x="233.33333333333331" y="7.6666666666666643" width="67" height="67"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="30" id="CJo-Tk-BEw"/>
-                                                                        <constraint firstAttribute="width" constant="60" id="ULU-ak-4oa"/>
+                                                                        <constraint firstAttribute="height" constant="67" id="CYt-ii-DOX"/>
+                                                                        <constraint firstAttribute="width" constant="67" id="Y6k-Sv-ce4"/>
                                                                     </constraints>
-                                                                    <state key="normal" title="Button"/>
-                                                                    <buttonConfiguration key="configuration" style="filled" title="EASY">
-                                                                        <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
-                                                                        <color key="baseBackgroundColor" red="0.057075168239646826" green="0.76942896842956543" blue="0.00014792444016940265" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                    </buttonConfiguration>
-                                                                </button>
+                                                                </imageView>
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2N-Pl-DId">
-                                                            <rect key="frame" x="0.0" y="51.333333333333329" width="216.66666666666666" height="42.666666666666671"/>
+                                                            <rect key="frame" x="0.0" y="82" width="216.66666666666666" height="82"/>
                                                             <string key="text">Take a selfie near the Washington
 Monument.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -76,9 +71,9 @@ Monument.</string>
                                                 <constraint firstItem="eat-E7-ZaS" firstAttribute="top" secondItem="eaR-e4-TYv" secondAttribute="topMargin" id="Hpn-7n-xDN"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="eat-E7-ZaS" secondAttribute="bottom" id="Ivb-RL-BQg"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Xim-1d-Bw6" secondAttribute="trailing" constant="26" id="Z6z-zF-eqP"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Xim-1d-Bw6" secondAttribute="bottom" constant="55" id="dyG-pz-L6T"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Xim-1d-Bw6" secondAttribute="bottom" constant="20" id="dyG-pz-L6T"/>
                                                 <constraint firstItem="Xim-1d-Bw6" firstAttribute="leading" secondItem="eaR-e4-TYv" secondAttribute="leadingMargin" constant="26" id="n9u-u7-bny"/>
-                                                <constraint firstItem="Xim-1d-Bw6" firstAttribute="top" secondItem="eaR-e4-TYv" secondAttribute="topMargin" constant="55" id="nF2-WT-2c8"/>
+                                                <constraint firstItem="Xim-1d-Bw6" firstAttribute="top" secondItem="eaR-e4-TYv" secondAttribute="topMargin" constant="20" id="nF2-WT-2c8"/>
                                                 <constraint firstItem="eat-E7-ZaS" firstAttribute="leading" secondItem="eaR-e4-TYv" secondAttribute="leadingMargin" id="pef-Cs-Mha"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="eat-E7-ZaS" secondAttribute="trailing" id="ulB-LM-MmA"/>
                                             </constraints>
@@ -86,6 +81,7 @@ Monument.</string>
                                         <connections>
                                             <outlet property="bgImage" destination="eat-E7-ZaS" id="050-DK-FZk"/>
                                             <outlet property="descLabel" destination="S2N-Pl-DId" id="4qN-73-U6j"/>
+                                            <outlet property="difficultyLabel" destination="6JU-24-nT5" id="9bd-oh-d99"/>
                                             <outlet property="titleLabel" destination="gdZ-Ts-QKc" id="YuT-o6-Pko"/>
                                             <segue destination="pA8-cf-pCM" kind="show" identifier="DetailSegue" id="cm7-pF-dcl"/>
                                         </connections>
@@ -126,11 +122,11 @@ Monument.</string>
                                         <rect key="frame" x="1.6666666666666572" y="0.0" width="349.66666666666674" height="173"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vc3-8w-EK8">
-                                                <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="20.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="40.666666666666664"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.inset.filled" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UwY-lk-yKG">
                                                         <rect key="frame" x="0.0" y="0.6666666666666643" width="19.333333333333332" height="19.333333333333332"/>
-                                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                                        <color key="tintColor" red="1" green="0.47838921699999998" blue="0.29835147709999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" weight="light">
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         </preferredSymbolConfiguration>
@@ -144,16 +140,18 @@ Monument.</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pcd-EE-7GA">
-                                                <rect key="frame" x="0.0" y="63.33333333333335" width="349.66666666666669" height="109.66666666666669"/>
+                                                <rect key="frame" x="0.0" y="83.666666666666686" width="261.33333333333331" height="89.333333333333314"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Go to the store and grab Hot Cheetos" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4N-81-ZBW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="281" height="74"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Washington Monument" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4N-81-ZBW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="261.33333333333331" height="37"/>
                                                         <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="37"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Make sure to get the Xtra Hot variety in either the large or medium large bag." lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvk-dM-igH">
-                                                        <rect key="frame" x="0.0" y="83.999999999999972" width="349.66666666666669" height="25.666666666666671"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvk-dM-igH">
+                                                        <rect key="frame" x="0.0" y="47" width="255" height="42.333333333333343"/>
+                                                        <string key="text">Take a selfie near the Washington
+Monument.</string>
                                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -208,7 +206,7 @@ Monument.</string>
                             <constraint firstItem="OvE-8k-THU" firstAttribute="trailing" secondItem="Hcv-GO-g8x" secondAttribute="trailing" constant="20" id="dsj-eS-N8S"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Details" id="02u-qf-pcy"/>
+                    <navigationItem key="navigationItem" title="Details" largeTitleDisplayMode="always" id="02u-qf-pcy"/>
                     <connections>
                         <outlet property="attachPhotoButton" destination="PGe-z4-UBZ" id="QZo-dn-ta1"/>
                         <outlet property="completedImageView" destination="UwY-lk-yKG" id="I0E-dT-cV9"/>
@@ -230,6 +228,8 @@ Monument.</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Z2F-Re-c2T">
                         <rect key="frame" x="0.0" y="59" width="393" height="107"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.47838921699999998" blue="0.29835147709999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="1" green="0.47838921699999998" blue="0.29835147709999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
                             <color key="textColor" red="1" green="0.47838921699999998" blue="0.29835147709999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -310,21 +310,19 @@ Monument.</string>
         <image name="Rectangle 1" width="362" height="193"/>
         <image name="TravelDC" width="120" height="30"/>
         <image name="circle.inset.filled" catalog="system" width="128" height="123"/>
+        <image name="easy" width="860" height="428"/>
         <image name="pexels-lea-bonzer-2561275-4155277 1" width="393" height="852"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
