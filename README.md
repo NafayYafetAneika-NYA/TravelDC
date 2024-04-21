@@ -34,7 +34,7 @@ Travel DC aims to revolutionize the way tourists explore Washington DC with chal
 
 **Required Must-have Stories**
 
-* View a list of Challenges to do in catagories like Food, Site seeing, etc
+* View a list of Challenges to do
 * Select a challenge and see other peoples' photos doing that challenge
 * Users can accept challenges and then post pictures of them completing the challenge
 * Score system to encourage people to complete challenges
@@ -48,7 +48,7 @@ Travel DC aims to revolutionize the way tourists explore Washington DC with chal
 ### 2. Screen Archetypes
 
 - [ ] **Challenges List Screen**
-* View a list of Challenges to do in catagories like Food, Site seeing, etc.
+* View a list of Challenges to do
 - [ ] **Challenge Detail Screen**
 * See a map with the location of the challenge, a short summary, a button which says "Accept Challenge".
 * If you scroll down, you see other peoples' photos doing that challenge.
