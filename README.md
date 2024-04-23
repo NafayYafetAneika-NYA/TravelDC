@@ -18,6 +18,11 @@ Original App Design Project - README Template
 
 Travel DC aims to revolutionize the way tourists explore Washington DC with challenges, activities and a social feed.
 
+
+### Demo video
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/h9yMK3JlT9U/0.jpg)](https://www.youtube.com/watch?v=h9yMK3JlT9U)
+
 ### App Evaluation
 
 [Evaluation of your app across the following attributes]
