@@ -18,6 +18,12 @@
 		983ACF4C2B684C4A004F08B3 /* TaskAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983ACF4B2B684C4A004F08B3 /* TaskAnnotationView.swift */; };
 		983ACF4E2B684C87004F08B3 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983ACF4D2B684C87004F08B3 /* TaskCell.swift */; };
 		986F70CE2BD43638003D158C /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 986F70CD2BD43638003D158C /* Nuke */; };
+		98FDB4802BD6EB0600E49D42 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDB47C2BD6EB0600E49D42 /* Post.swift */; };
+		98FDB4812BD6EB0600E49D42 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDB47D2BD6EB0600E49D42 /* FeedViewController.swift */; };
+		98FDB4822BD6EB0600E49D42 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDB47E2BD6EB0600E49D42 /* User.swift */; };
+		98FDB4832BD6EB0600E49D42 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FDB47F2BD6EB0600E49D42 /* FeedTableViewCell.swift */; };
+		98FDB4862BD6EBFE00E49D42 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 98FDB4852BD6EBFE00E49D42 /* AlamofireImage */; };
+		98FDB4892BD6EC5500E49D42 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 98FDB4882BD6EC5500E49D42 /* ParseSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,10 @@
 		983ACF492B6843AC004F08B3 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 		983ACF4B2B684C4A004F08B3 /* TaskAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAnnotationView.swift; sourceTree = "<group>"; };
 		983ACF4D2B684C87004F08B3 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		98FDB47C2BD6EB0600E49D42 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = "../../TravelDC-yafet/proj-scavengerhunt/Post.swift"; sourceTree = "<group>"; };
+		98FDB47D2BD6EB0600E49D42 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = "../../TravelDC-yafet/proj-scavengerhunt/FeedViewController.swift"; sourceTree = "<group>"; };
+		98FDB47E2BD6EB0600E49D42 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../../TravelDC-yafet/proj-scavengerhunt/User.swift"; sourceTree = "<group>"; };
+		98FDB47F2BD6EB0600E49D42 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedTableViewCell.swift; path = "../../TravelDC-yafet/proj-scavengerhunt/FeedTableViewCell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +51,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				986F70CE2BD43638003D158C /* Nuke in Frameworks */,
+				98FDB4892BD6EC5500E49D42 /* ParseSwift in Frameworks */,
+				98FDB4862BD6EBFE00E49D42 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +81,10 @@
 				983ACF332B683FCB004F08B3 /* AppDelegate.swift */,
 				983ACF352B683FCB004F08B3 /* SceneDelegate.swift */,
 				983ACF372B683FCB004F08B3 /* TaskListViewController.swift */,
+				98FDB47F2BD6EB0600E49D42 /* FeedTableViewCell.swift */,
+				98FDB47D2BD6EB0600E49D42 /* FeedViewController.swift */,
+				98FDB47C2BD6EB0600E49D42 /* Post.swift */,
+				98FDB47E2BD6EB0600E49D42 /* User.swift */,
 				983ACF392B683FCB004F08B3 /* Main.storyboard */,
 				983ACF3C2B683FCC004F08B3 /* Assets.xcassets */,
 				983ACF3E2B683FCC004F08B3 /* LaunchScreen.storyboard */,
@@ -99,6 +115,8 @@
 			name = "proj-scavengerhunt";
 			packageProductDependencies = (
 				986F70CD2BD43638003D158C /* Nuke */,
+				98FDB4852BD6EBFE00E49D42 /* AlamofireImage */,
+				98FDB4882BD6EC5500E49D42 /* ParseSwift */,
 			);
 			productName = "proj-scavengerhunt";
 			productReference = 983ACF302B683FCB004F08B3 /* proj-scavengerhunt.app */;
@@ -130,6 +148,8 @@
 			mainGroup = 983ACF272B683FCB004F08B3;
 			packageReferences = (
 				986F70CC2BD43638003D158C /* XCRemoteSwiftPackageReference "Nuke" */,
+				98FDB4842BD6EBFE00E49D42 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				98FDB4872BD6EC5500E49D42 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
 			);
 			productRefGroup = 983ACF312B683FCB004F08B3 /* Products */;
 			projectDirPath = "";
@@ -159,12 +179,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				983ACF482B684175004F08B3 /* Task.swift in Sources */,
+				98FDB4812BD6EB0600E49D42 /* FeedViewController.swift in Sources */,
 				983ACF4E2B684C87004F08B3 /* TaskCell.swift in Sources */,
 				983ACF382B683FCB004F08B3 /* TaskListViewController.swift in Sources */,
+				98FDB4802BD6EB0600E49D42 /* Post.swift in Sources */,
 				983ACF4C2B684C4A004F08B3 /* TaskAnnotationView.swift in Sources */,
 				983ACF342B683FCB004F08B3 /* AppDelegate.swift in Sources */,
 				983ACF362B683FCB004F08B3 /* SceneDelegate.swift in Sources */,
+				98FDB4822BD6EB0600E49D42 /* User.swift in Sources */,
 				983ACF4A2B6843AC004F08B3 /* TaskDetailViewController.swift in Sources */,
+				98FDB4832BD6EB0600E49D42 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +421,22 @@
 				version = 9.6.1;
 			};
 		};
+		98FDB4842BD6EBFE00E49D42 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.0;
+			};
+		};
+		98FDB4872BD6EC5500E49D42 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.14.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -404,6 +444,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 986F70CC2BD43638003D158C /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = Nuke;
+		};
+		98FDB4852BD6EBFE00E49D42 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98FDB4842BD6EBFE00E49D42 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+		98FDB4882BD6EC5500E49D42 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98FDB4872BD6EC5500E49D42 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

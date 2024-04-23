@@ -8,6 +8,7 @@
 import UIKit
 import MapKit
 import PhotosUI
+import ParseSwift
 
 class TaskDetailViewController: UIViewController {
 
@@ -16,8 +17,11 @@ class TaskDetailViewController: UIViewController {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var attachPhotoButton: UIButton!
+    @IBOutlet var diffLabel: UIImageView!
     
     @IBOutlet var mapView: MKMapView!
+    
+    private var pickedImage: UIImage?
     
     var task: Task!
     
@@ -47,6 +51,19 @@ class TaskDetailViewController: UIViewController {
     private func updateUI() {
         titleLabel.text = task.title
         descriptionLabel.text = task.description
+        
+        switch task.difficulty {
+        case "Easy":
+            diffLabel.image = UIImage(named: "easy")
+        case "Medium":
+            diffLabel.image = UIImage(named: "med")
+        case "Hard":
+            diffLabel.image = UIImage(named: "hard")
+        default:
+            diffLabel.image = UIImage(named: "TravelDC")
+        }
+        
+        
 
         let completedImage = UIImage(systemName: task.isComplete ? "circle.inset.filled" : "circle")
 
@@ -54,7 +71,7 @@ class TaskDetailViewController: UIViewController {
         completedImageView.image = completedImage?.withRenderingMode(.alwaysTemplate)
         completedLabel.text = task.isComplete ? "Complete" : "Incomplete"
 
-        let color: UIColor = task.isComplete ? .systemBlue : .tertiaryLabel
+        let color: UIColor = task.isComplete ? .systemOrange : .tertiaryLabel
         completedImageView.tintColor = color
         completedLabel.textColor = color
 
@@ -89,13 +106,14 @@ class TaskDetailViewController: UIViewController {
             presentImagePicker()
         }
     }
+    
+    
+    
     private func presentImagePicker() {
         // TODO: Create, configure and present image picker.
         
-        // Create a configuration object
         var config = PHPickerConfiguration(photoLibrary: PHPhotoLibrary.shared())
 
-        // Set the filter to only show images as options (i.e. no videos, etc.).
         config.filter = .images
 
         // Request the original file format. Fastest method as it avoids transcoding.
@@ -115,6 +133,101 @@ class TaskDetailViewController: UIViewController {
 
     }
     
+    
+    private func savePostWithImage() {
+
+                guard let image = pickedImage,
+
+                      let imageData = image.jpegData(compressionQuality: 0.1) else {
+
+                    print("error on line 143")
+                    return
+
+                }
+
+                
+
+                let file = ParseFile(name: "image.jpg", data: imageData)
+
+                
+
+                // Generate random username and password
+
+                let randomUsername =  generateRandomUsername()   // generateRandomUsername()
+
+                let randomPassword =  generateRandomPassword()  //generateRandomPassword()
+
+                
+
+                // Create a User object with random username and password
+
+                let user = User(username: randomUsername, password: randomPassword)
+
+                
+
+                // Create a Post object and set the caption, image file, and user
+
+                var post = Post()
+
+                post.caption = "ewrgfyerigfrue caption" // Use the text from captionTextField or a default value
+
+                post.imageFile = file
+
+                post.user = user
+
+                
+
+                // Save the Post object to the Parse database
+
+                post.save { result in
+
+                    switch result {
+
+                    case .success(let savedPost):
+
+                        print("Post saved successfully with objectId: \(savedPost.objectId ?? "")")
+
+                        // Handle success (e.g., show success message, refresh UI, etc.)
+
+                    case .failure(let error):
+
+                        print("Error saving post: \(error)")
+
+                        // Handle failure (e.g., show error message to the user)
+
+                    }
+
+                }
+
+            }
+    
+    func generateRandomUsername() -> String {
+
+                let adjectives = ["Happy", "Funny", "Lucky", "Clever", "Silly", "Cool"]
+
+                let nouns = ["Cat", "Dog", "Bird", "Fish", "Bear", "Tiger"]
+
+                let randomAdjective = adjectives.randomElement() ?? "Random"
+
+                let randomNoun = nouns.randomElement() ?? "User"
+
+                let randomNumber = Int.random(in: 100...999) // Generate a random number between 100 and 999
+
+                return "\(randomAdjective)\(randomNoun)\(randomNumber)"
+
+            }
+
+            
+
+            private func generateRandomPassword(length: Int = 8) -> String {
+
+                let characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+                let password = String((0..<length).map { _ in characters.randomElement()! })
+
+                return password
+
+            }
     
 
     func updateMapView() {
@@ -181,9 +294,14 @@ extension TaskDetailViewController: PHPickerViewControllerDelegate {
 
             // UI updates should be done on main thread, hence the use of `DispatchQueue.main.async`
             DispatchQueue.main.async { [weak self] in
+                
+                
 
                 // Set the picked image and location on the task
                 self?.task.set(image, with: location)
+                
+                self?.pickedImage = image
+                self?.savePostWithImage()
 
                 // Update the UI since we've updated the task
                 self?.updateUI()

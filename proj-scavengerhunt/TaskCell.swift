@@ -34,6 +34,14 @@ class TaskCell: UITableViewCell {
             difficultyLabel.image = UIImage(named: "TravelDC")
         }
         
+        if task.isComplete {
+            // If task is complete, gray out the cell
+            self.contentView.alpha = 0.5 // You can adjust the opacity as needed
+        } else {
+            // Otherwise, restore the default appearance
+            self.contentView.alpha = 1.0
+        }
+        
         let imageURL: URL = task.bgimage ?? URL(string: "https://salonlfc.com/wp-content/uploads/2018/01/image-not-found-1-scaled-1150x647.png")!
            Nuke.loadImage(with: imageURL, into: bgImage)
         
