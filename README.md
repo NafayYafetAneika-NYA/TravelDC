@@ -21,7 +21,7 @@ Travel DC aims to revolutionize the way tourists explore Washington DC with chal
 
 ### Demo video
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/h9yMK3JlT9U/0.jpg)]([https://www.youtube.com/watch?v=h9yMK3JlT9U](https://www.youtube.com/watch?v=h9yMK3JlT9U))
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/h9yMK3JlT9U/0.jpg)](https://www.youtube.com/watch?v=h9yMK3JlT9U)
 
 ### App Evaluation
 
