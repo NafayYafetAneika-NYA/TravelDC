@@ -21,6 +21,15 @@ Travel DC aims to revolutionize the way tourists explore Washington DC with chal
 
 ### Demo video
 
+
+   <a href="https://www.loom.com/share/e76c1faf1d2e43fcb3f46672ec6b20c0">
+     <p>Simulator - iPhone 15 Pro - 25 April 2024 - Watch Video</p>
+   </a>
+   <a href="https://www.loom.com/share/e76c1faf1d2e43fcb3f46672ec6b20c0">
+     <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/e76c1faf1d2e43fcb3f46672ec6b20c0-with-play.gif">
+   </a>
+
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/h9yMK3JlT9U/0.jpg)](https://www.youtube.com/watch?v=h9yMK3JlT9U)
 
 ### App Evaluation
