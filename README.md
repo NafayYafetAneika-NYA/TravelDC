@@ -52,15 +52,13 @@ Travel DC aims to revolutionize the way tourists explore Washington DC with chal
 
 ### 2. Screen Archetypes
 
-- [ ] **Challenges List Screen**
+- [x] **Challenges List Screen**
 * View a list of Challenges to do
-- [ ] **Challenge Detail Screen**
+- [x] **Challenge Detail Screen**
 * See a map with the location of the challenge, a short summary, a button which says "Accept Challenge".
 * If you scroll down, you see other peoples' photos doing that challenge.
-- [ ] **Challenge Accepted Screen**
+- [x] **Challenge Accepted Screen**
 * See a map with the location of the challenge, a short summary and a button to upload/take your photo.
-- [ ] **Leaderboard Screen**
-* See a list of players with the highest score in your area.
 
 
 ### 3. Navigation
@@ -68,15 +66,15 @@ Travel DC aims to revolutionize the way tourists explore Washington DC with chal
 **Tab Navigation** (Tab to Screen)
 
 
-- [ ] Challenges List
-- [ ] Leaderboard
+- [x] Challenges List
+
 
 
 **Flow Navigation** (Screen to Screen)
 
-- [ ] **Challenges List**
+- [x] **Challenges List**
   * Leads to **Challenge Detail Screen**
-- [ ] **Challenge Detail Screen**
+- [x] **Challenge Detail Screen**
   * Leads to **Challenge Accepted Screen**
 
 
